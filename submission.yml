@@ -1,0 +1,22 @@
+version: 1
+
+setup:
+  commands:
+    - npm install
+
+compile:
+  commands:
+    - npx hardhat compile
+
+test:
+  commands:
+    - npx hardhat test
+
+coverage:
+  commands:
+    - npx hardhat coverage
+
+verify:
+  commands:
+    - npx hardhat compile
+    - npx hardhat test
